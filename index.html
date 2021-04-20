@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="app">
+    <div>Welcome to Covid Cube</div>
+    <div class="city">Fetching Location...</div>
+    <div class="scene">
+      <div class="cube">
+        <div class="cube__face cube__face--front page1">
+          <p class="heading">Cases</p>
+          <div id="confirmed" draggable="true" class="box">Confirmed <p class="count">0</p></div>
+          <div id="deceased" draggable="true" class="box">Deceased <p class="count">0</p></div>
+          <div id="recovered" draggable="true" class="box">Recovered <p class="count">0</p></div>
+        </div>
+        <div class="cube__face cube__face--back"></div>
+        <div class="cube__face cube__face--right">
+          <p class="heading">Vaccine doses administered</p>
+          <div id="vaccinated" draggable="true" class="box">Vaccinated <p class="count">0</p></div>
+        </div>
+        <div class="cube__face cube__face--left">
+          <p class="heading">Helpline Details</p>
+          <div class="page3">
+            <span>State Helpline number: </span><a href="#" id="phone-number"></a>
+            <p>Other Useful links</p>
+            <ul>
+              <li><a href="https://docs.google.com/document/d/e/2PACX-1vQLa5IUS7JfyoxIOWY53QWKgwFKko542K6lJpWkEq7oZRM79Y1H92YZNUZTOrFhWK2n3P6admdwU8YH/pub?urp=gmail_link&gxids=7628" target="_blank">Link1</a></li>
+              <li><a href="https://docs.google.com/document/d/16WeMKah7RXoB1gnqa9YXVTuWM4TR6hY9Qys48Pf8mCc/mobilebasic" target="_blank">Link2</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cube__face cube__face--top"></div>
+        <div class="cube__face cube__face--bottom"></div>
+      </div>
+    </div>
+    <p class="radio-group">
+      <label>
+        <input type="radio" name="rotate-cube-side" value="front" checked /> Cases
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="right" /> Vaccinated
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="left" /> Helpline Details
+      </label>
+    </p>
+  </div>
+  <!-- <script src="js/plugins.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
